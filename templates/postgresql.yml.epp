@@ -213,8 +213,8 @@ watchdog:
 <% if $patroni::etcd_url { -%>
   url: <%= $patroni::etcd_url %>
 <% } -%>
-<% if $patroni::etcd_proxy  { -%>
-  proxy: <%= $patroni::etcd_proxy %>
+<% if $patroni::etcd_proxyurl  { -%>
+  proxy: <%= $patroni::etcd_proxyurl %>
 <% } -%>
 <% if $patroni::etcd_srv { -%>
   srv: <%= $patroni::etcd_srv %>
