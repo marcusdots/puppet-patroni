@@ -288,7 +288,7 @@ consul:
   url: <%= $patroni::consul_url %>
 <% } -%>
 <% if $patroni::consul_token { -%>
-  token: <%= $patroni::consul_tokengit  %>
+  token: <%= $patroni::consul_token  %>
 <% } -%>
 <% if $patroni::consul_cacert { -%>
   cacert: <%= $patroni::consul_cacert %>
