@@ -192,7 +192,7 @@ ctl:
   keyfile: <%= $patroni::ctl_keyfile %>
 <% } -%>
 <% if $patroni::ctl_keyfile_password { -%>
-  keyfile_password: $patroni::ctl_keyfile_password %>
+  keyfile_password: <%= $patroni::ctl_keyfile_password %>
 <% } -%>
 <% } -%>
 
